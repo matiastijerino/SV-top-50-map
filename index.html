@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silicon Valley Companies Map</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="header-left">
+            <h1>Silicon Valley Top 50 Companies</h1>
+            <p>Ranked by Market Capitalization</p>
+        </div>
+        <div class="header-right">
+            <div class="total-market-cap">
+                <div class="market-cap-info">
+                    <div class="market-cap-label">Total Valley Market Cap</div>
+                    <div class="market-cap-value" id="total-market-cap">$14.2T</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-container">
+        <div id="map"></div>
+        
+        <!-- Hover Tooltip -->
+        <div id="hover-tooltip" class="hover-tooltip hidden">
+            <div class="tooltip-header">
+                <img id="tooltip-logo" src="" alt="">
+                <div class="tooltip-rank" id="tooltip-rank"></div>
+            </div>
+            <h3 id="tooltip-name"></h3>
+            <p><strong>Market Cap:</strong> <span id="tooltip-marketcap"></span></p>
+            <p><strong>Sector:</strong> <span id="tooltip-sector" class="sector-badge"></span></p>
+            <p class="tooltip-hint">Click for more details</p>
+        </div>
+        
+        <div id="legend" class="legend">
+            <h4>Sectors</h4>
+            <div class="legend-item"><span class="legend-color" style="background: #667eea;"></span> Technology</div>
+            <div class="legend-item"><span class="legend-color" style="background: #f093fb;"></span> Automotive</div>
+            <div class="legend-item"><span class="legend-color" style="background: #4facfe;"></span> Entertainment</div>
+            <div class="legend-item"><span class="legend-color" style="background: #fa709a;"></span> Semiconductors</div>
+            <div class="legend-item"><span class="legend-color" style="background: #43e97b;"></span> Software</div>
+            <div class="legend-item"><span class="legend-color" style="background: #feca57;"></span> Finance</div>
+            <div class="legend-item"><span class="legend-color" style="background: #ff6b6b;"></span> E-commerce</div>
+            <div class="legend-item"><span class="legend-color" style="background: #a29bfe;"></span> Social Media</div>
+            <div class="legend-item"><span class="legend-color" style="background: #fd79a8;"></span> Cybersecurity</div>
+            <div class="legend-item"><span class="legend-color" style="background: #38ada9;"></span> AI</div>
+        </div>
+    </div>
+    
+    <div id="company-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-name"></h2>
+            <p><strong>Ticker:</strong> <span id="modal-ticker"></span></p>
+            <p><strong>Market Cap:</strong> <span id="modal-marketcap"></span></p>
+            <p><strong>Sector:</strong> <span id="modal-industry"></span></p>
+            <p><strong>Address:</strong> <span id="modal-address"></span></p>
+            <a id="modal-website" href="#" target="_blank">Visit Website</a>
+        </div>
+    </div>
+
+    <script src="companies.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
