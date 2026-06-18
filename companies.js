@@ -21,7 +21,7 @@ const companies = [
         lat: 37.4220,
         lng: -122.0841,
         website: "https://www.google.com",
-        logo: "https://companiesmarketcap.com/img/company-logos/64/GOOGL.webp"
+        logo: "https://logo.clearbit.com/google.com"
     },
     // Rank 3
     {
