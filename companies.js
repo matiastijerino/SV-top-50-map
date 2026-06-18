@@ -294,8 +294,8 @@ const companies = [
         marketCap: 126000000000, // $126B
         sector: "Automotive",
         address: "Mountain View, CA",
-        lat: 37.4219,
-        lng: -122.0840,
+        lat: 37.4222,
+        lng: -122.0842,
         website: "https://www.waymo.com",
         logo: "https://logo.clearbit.com/waymo.com"
     },
@@ -539,17 +539,17 @@ const companies = [
         website: "https://www.paypal.com",
         logo: "https://companiesmarketcap.com/img/company-logos/64/PYPL.webp"
     },
-    // Rank 46
+    // Rank 5
     {
-        name: "Workday",
-        ticker: "WDAY",
-        marketCap: 34000000000, // $34B
-        sector: "Software",
-        address: "6110 Stoneridge Mall Road, Pleasanton, CA",
-        lat: 37.6977,
-        lng: -121.9246,
-        website: "https://www.workday.com",
-        logo: "https://companiesmarketcap.com/img/company-logos/64/WDAY.webp"
+        name: "Tesla",
+        ticker: "TSLA",
+        marketCap: 1250000000000, // $1.25T
+        sector: "Automotive",
+        address: "3500 Deer Creek Road, Palo Alto, CA",
+        lat: 37.3940,
+        lng: -122.1506,
+        website: "https://www.tesla.com",
+        logo: "https://companiesmarketcap.com/img/company-logos/64/TSLA.webp"
     },
     // Rank 47
     {
