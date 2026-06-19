@@ -43,7 +43,7 @@ function initMap() {
     rankCompanies();
     
     // Update total market cap
-    document.getElementById('total-market-cap').textContent = '$14.2T';
+    document.getElementById('total-market-cap').textContent = '$22T';
 
     // Add markers
     rankedCompanies.forEach((company) => {
